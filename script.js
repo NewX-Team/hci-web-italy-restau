@@ -11,5 +11,25 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Active state sudah di-handle langsung di masing-masing HTML per halaman
-// Tidak perlu JS toggle lagi
+
+// ==============================
+// FADE IN ON SCROLL
+// ==============================
+const observerOptions = {
+  threshold: 0.12,
+  rootMargin: '0px 0px -40px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.gallery-card, .story-inner, .hero-content').forEach(el => {
+  el.classList.add('fade-in');
+  observer.observe(el);
+});
