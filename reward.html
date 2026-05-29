@@ -3,79 +3,312 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reward — Marca</title>
+  <title>Reward — Mamma Mia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="navbar.css" />
-  <link rel="stylesheet" href="reward.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/navbar.css" />
+  <link rel="stylesheet" href="/assets/css/loader.css" />
+  <link rel="stylesheet" href="/assets/css/reward.css" />
 </head>
 <body>
 
-  <!-- DESKTOP NAVBAR -->
-  <header class="navbar-desktop">
-    <div class="navbar-inner">
-      <div class="navbar-brand">
-        <span class="brand-dot"></span>
-        <span class="brand-name">Marca</span>
+  <!-- PAGE LOADER -->
+  <div id="page-loader">
+    <div class="loader-n">
+      <svg width="52" height="96" viewBox="0 0 68 160" xmlns="http://www.w3.org/2000/svg">
+        <line class="n-path n-stem-l"   x1="4"  y1="140" x2="22" y2="20"/>
+        <line class="n-path n-serif-tl" x1="10" y1="20"  x2="32" y2="20"/>
+        <line class="n-path n-serif-tr" x1="36" y1="20"  x2="58" y2="20"/>
+        <line class="n-path n-diag"     x1="22" y1="20"  x2="48" y2="140"/>
+        <line class="n-path n-stem-r"   x1="48" y1="140" x2="64" y2="20"/>
+        <line class="n-path n-serif-bl" x1="-8" y1="140" x2="16" y2="140"/>
+        <line class="n-path n-serif-br" x1="36" y1="140" x2="60" y2="140"/>
+      </svg>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <!-- REAL CONTENT -->
+  <div class="real-content">
+
+    <!-- DESKTOP NAVBAR -->
+    <header class="navbar-desktop">
+      <div class="navbar-inner">
+        <div class="navbar-brand">
+          <span class="brand-dot"></span>
+          <span class="brand-name">Mamma Mia</span>
+        </div>
+        <nav class="navbar-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="order.html" class="nav-link">Order</a>
+          <a href="menu.html" class="nav-link">Menu</a>
+          <a href="reward.html" class="nav-link active">Reward</a>
+          <a href="about.html" class="nav-link">About</a>
+        </nav>
       </div>
-      <nav class="navbar-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="order.html" class="nav-link">Order</a>
-        <a href="menu.html" class="nav-link">Menu</a>
-        <a href="reward.html" class="nav-link active">Reward</a>
-        <a href="about.html" class="nav-link">About</a>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- MOBILE NAVBAR -->
-  <nav class="navbar-mobile">
-    <div class="mobile-nav-inner">
-      <a href="index.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-          <polyline points="9 22 9 12 15 12 15 22"/>
-        </svg>
-        <span>Home</span>
-      </a>
-      <a href="order.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-          <line x1="3" y1="6" x2="21" y2="6"/>
-          <path d="M16 10a4 4 0 0 1-8 0"/>
-        </svg>
-        <span>Order</span>
-      </a>
-      <a href="menu.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
-          <path d="M12 6v6l4 2"/>
-        </svg>
-        <span>Menu</span>
-      </a>
-      <a href="reward.html" class="mobile-nav-item active">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-        </svg>
-        <span>Reward</span>
-      </a>
-      <a href="about.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"/>
-          <line x1="12" y1="8" x2="12" y2="12"/>
-          <line x1="12" y1="16" x2="12.01" y2="16"/>
-        </svg>
-        <span>About</span>
-      </a>
-    </div>
-  </nav>
+    <!-- MOBILE NAVBAR -->
+    <nav class="navbar-mobile">
+      <div class="mobile-nav-inner">
+        <a href="index.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="order.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span>Order</span>
+        </a>
+        <a href="menu.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 6v6l4 2"/></svg>
+          <span>Menu</span>
+        </a>
+        <a href="reward.html" class="mobile-nav-item active">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>Reward</span>
+        </a>
+        <a href="about.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span>About</span>
+        </a>
+      </div>
+    </nav>
 
-  <!-- PAGE CONTENT -->
-  <main class="page-content">
-    <!-- Reward content here -->
-  </main>
+    <!-- HERO -->
+    <section class="reward-hero">
+      <p class="reward-eyebrow">For our loyal guests</p>
+      <h1 class="reward-title">Rewards</h1>
+      <p class="reward-sub">Every visit brings you closer to something special. Explore what's waiting for you.</p>
+      <div class="reward-points-bar">
+        <div class="points-info">
+          <span class="points-label">Your Points</span>
+          <span class="points-value">—</span>
+        </div>
+        <div class="points-divider"></div>
+        <div class="points-info">
+          <span class="points-label">Tier</span>
+          <span class="points-value points-tier">Guest</span>
+        </div>
+        <div class="points-cta">
+          <a href="order.html" class="btn-earn">Start Earning</a>
+        </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- HOW IT WORKS -->
+    <section class="how-section">
+      <div class="how-inner">
+        <p class="section-label">How it works</p>
+        <h2 class="section-title">Simple. Honest. Rewarding.</h2>
+        <div class="how-steps">
+          <div class="how-step">
+            <div class="how-step-num">01</div>
+            <div class="how-step-text">
+              <h3>Order & Earn</h3>
+              <p>Every Rp 10.000 you spend earns 1 point. Points stack automatically with each order.</p>
+            </div>
+          </div>
+          <div class="how-step-divider"></div>
+          <div class="how-step">
+            <div class="how-step-num">02</div>
+            <div class="how-step-text">
+              <h3>Reach a Tier</h3>
+              <p>Hit milestones to unlock Bronze, Silver, or Gold status — each with better perks and exclusive access.</p>
+            </div>
+          </div>
+          <div class="how-step-divider"></div>
+          <div class="how-step">
+            <div class="how-step-num">03</div>
+            <div class="how-step-text">
+              <h3>Redeem Anytime</h3>
+              <p>Use your points toward free dishes, discounts, or exclusive experiences. No expiry, no fine print.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REWARD GALLERY -->
+    <section class="rewards-section">
+      <div class="rewards-inner">
+        <div class="rewards-header">
+          <p class="section-label">Available Rewards</p>
+          <h2 class="section-title">What You Can Unlock</h2>
+        </div>
+
+        <div class="rewards-grid">
+
+          <!-- TIER BADGES -->
+          <div class="reward-card reward-card--tier bronze">
+            <div class="reward-card-top">
+              <div class="reward-badge">
+                <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M16 8l2.09 4.26L23 13.27l-3.5 3.41.83 4.82L16 19.27l-4.33 2.23.83-4.82L9 13.27l4.91-.71L16 8z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="reward-tier-label">Bronze Tier</div>
+            </div>
+            <h3 class="reward-name">Bronze Member Perks</h3>
+            <p class="reward-desc">Unlock at 100 points. Enjoy a complimentary welcome drink on your first Bronze visit, priority seating on weekends, and a 5% discount on all desserts.</p>
+            <div class="reward-footer">
+              <span class="reward-points-req">
+                <svg viewBox="0 0 16 16" fill="none"><polygon points="8 1 10 6 15 6 11 9.5 12.5 14.5 8 11.5 3.5 14.5 5 9.5 1 6 6 6" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+                100 pts to unlock
+              </span>
+            </div>
+          </div>
+
+          <div class="reward-card reward-card--tier silver">
+            <div class="reward-card-top">
+              <div class="reward-badge">
+                <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M16 8l2.09 4.26L23 13.27l-3.5 3.41.83 4.82L16 19.27l-4.33 2.23.83-4.82L9 13.27l4.91-.71L16 8z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="reward-tier-label">Silver Tier</div>
+            </div>
+            <h3 class="reward-name">Silver Member Perks</h3>
+            <p class="reward-desc">Unlock at 300 points. Everything in Bronze, plus a free dish of your choice every month, 10% off your entire bill on birthdays, and early access to new menu items.</p>
+            <div class="reward-footer">
+              <span class="reward-points-req">
+                <svg viewBox="0 0 16 16" fill="none"><polygon points="8 1 10 6 15 6 11 9.5 12.5 14.5 8 11.5 3.5 14.5 5 9.5 1 6 6 6" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+                300 pts to unlock
+              </span>
+            </div>
+          </div>
+
+          <div class="reward-card reward-card--tier gold">
+            <div class="reward-card-top">
+              <div class="reward-badge">
+                <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/><path d="M16 8l2.09 4.26L23 13.27l-3.5 3.41.83 4.82L16 19.27l-4.33 2.23.83-4.82L9 13.27l4.91-.71L16 8z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="reward-tier-label">Gold Tier</div>
+            </div>
+            <h3 class="reward-name">Gold Member Perks</h3>
+            <p class="reward-desc">Unlock at 700 points. The full experience — complimentary chef's tasting on special occasions, 15% lifetime discount, a dedicated table reservation line, and exclusive seasonal gifts.</p>
+            <div class="reward-footer">
+              <span class="reward-points-req">
+                <svg viewBox="0 0 16 16" fill="none"><polygon points="8 1 10 6 15 6 11 9.5 12.5 14.5 8 11.5 3.5 14.5 5 9.5 1 6 6 6" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+                700 pts to unlock
+              </span>
+            </div>
+          </div>
+
+          <!-- REDEEMABLE REWARDS -->
+          <div class="reward-card">
+            <div class="reward-card-top">
+              <div class="reward-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+              </div>
+            </div>
+            <h3 class="reward-name">Free Drink</h3>
+            <p class="reward-desc">Redeem 50 points for any drink from our menu — hot, cold, or blended. No restrictions, no minimum spend. Just pick what you're in the mood for.</p>
+            <div class="reward-footer">
+              <span class="reward-points-req">
+                <svg viewBox="0 0 16 16" fill="none"><polygon points="8 1 10 6 15 6 11 9.5 12.5 14.5 8 11.5 3.5 14.5 5 9.5 1 6 6 6" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+                50 pts
+              </span>
+              <span class="reward-tag">Redeemable</span>
+            </div>
+          </div>
+
+          <div class="reward-card">
+            <div class="reward-card-top">
+              <div class="reward-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              </div>
+            </div>
+            <h3 class="reward-name">Rp 20.000 Voucher</h3>
+            <p class="reward-desc">A flat discount voucher redeemable on any order of Rp 80.000 or more. Great for your next solo visit or a casual catch-up with a friend.</p>
+            <div class="reward-footer">
+              <span class="reward-points-req">
+                <svg viewBox="0 0 16 16" fill="none"><polygon points="8 1 10 6 15 6 11 9.5 12.5 14.5 8 11.5 3.5 14.5 5 9.5 1 6 6 6" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+                80 pts
+              </span>
+              <span class="reward-tag">Redeemable</span>
+            </div>
+          </div>
+
+          <div class="reward-card">
+            <div class="reward-card-top">
+              <div class="reward-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
+            </div>
+            <h3 class="reward-name">Free Dessert</h3>
+            <p class="reward-desc">Choose any dessert on the menu — on us. Whether it's the Klepon Truffle or the Panna Cotta Gula Aren, this one's entirely your call.</p>
+            <div class="reward-footer">
+              <span class="reward-points-req">
+                <svg viewBox="0 0 16 16" fill="none"><polygon points="8 1 10 6 15 6 11 9.5 12.5 14.5 8 11.5 3.5 14.5 5 9.5 1 6 6 6" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+                120 pts
+              </span>
+              <span class="reward-tag">Redeemable</span>
+            </div>
+          </div>
+
+          <div class="reward-card">
+            <div class="reward-card-top">
+              <div class="reward-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+            </div>
+            <h3 class="reward-name">Bring a Friend Free</h3>
+            <p class="reward-desc">Treat a guest to a complimentary main course when you dine together. Valid for one companion per visit, any day of the week.</p>
+            <div class="reward-footer">
+              <span class="reward-points-req">
+                <svg viewBox="0 0 16 16" fill="none"><polygon points="8 1 10 6 15 6 11 9.5 12.5 14.5 8 11.5 3.5 14.5 5 9.5 1 6 6 6" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+                200 pts
+              </span>
+              <span class="reward-tag">Redeemable</span>
+            </div>
+          </div>
+
+          <div class="reward-card">
+            <div class="reward-card-top">
+              <div class="reward-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+            </div>
+            <h3 class="reward-name">Chef's Table Experience</h3>
+            <p class="reward-desc">An exclusive two-hour dining session with our head chef. A personalized tasting menu, behind-the-scenes kitchen tour, and a signed Mamma Mia recipe card to take home.</p>
+            <div class="reward-footer">
+              <span class="reward-points-req">
+                <svg viewBox="0 0 16 16" fill="none"><polygon points="8 1 10 6 15 6 11 9.5 12.5 14.5 8 11.5 3.5 14.5 5 9.5 1 6 6 6" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+                500 pts
+              </span>
+              <span class="reward-tag reward-tag--exclusive">Exclusive</span>
+            </div>
+          </div>
+
+          <div class="reward-card">
+            <div class="reward-card-top">
+              <div class="reward-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+            </div>
+            <h3 class="reward-name">Private Dining Night</h3>
+            <p class="reward-desc">Reserve the entire Mamma Mia dining room for an evening — ideal for intimate celebrations. Includes a custom menu consultation, flowers, and a bottle of house wine.</p>
+            <div class="reward-footer">
+              <span class="reward-points-req">
+                <svg viewBox="0 0 16 16" fill="none"><polygon points="8 1 10 6 15 6 11 9.5 12.5 14.5 8 11.5 3.5 14.5 5 9.5 1 6 6 6" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+                800 pts
+              </span>
+              <span class="reward-tag reward-tag--exclusive">Exclusive</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BOTTOM CTA -->
+    <section class="reward-cta">
+      <div class="reward-cta-inner">
+        <p class="section-label">Ready to earn?</p>
+        <h2 class="reward-cta-title">Your next order is already a step forward.</h2>
+        <a href="/assets/html/order.html" class="btn-reward-order">Order Now</a>
+      </div>
+    </section>
+
+  </div><!-- end .real-content -->
+
+  <script src="/assets/js/script.js"></script>
 </body>
 </html>

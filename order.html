@@ -3,79 +3,410 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Order — Marca</title>
+  <title>Order — Mamma Mia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="navbar.css" />
-  <link rel="stylesheet" href="order.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/navbar.css" />
+  <link rel="stylesheet" href="/assets/css/loader.css" />
+  <link rel="stylesheet" href="/assets/css/order.css" />
 </head>
 <body>
 
-  <!-- DESKTOP NAVBAR -->
-  <header class="navbar-desktop">
-    <div class="navbar-inner">
-      <div class="navbar-brand">
-        <span class="brand-dot"></span>
-        <span class="brand-name">Marca</span>
+  <!-- PAGE LOADER -->
+  <div id="page-loader">
+    <div class="loader-n">
+      <svg width="52" height="96" viewBox="0 0 68 160" xmlns="http://www.w3.org/2000/svg">
+        <line class="n-path n-stem-l"   x1="4"  y1="140" x2="22" y2="20"/>
+        <line class="n-path n-serif-tl" x1="10" y1="20"  x2="32" y2="20"/>
+        <line class="n-path n-serif-tr" x1="36" y1="20"  x2="58" y2="20"/>
+        <line class="n-path n-diag"     x1="22" y1="20"  x2="48" y2="140"/>
+        <line class="n-path n-stem-r"   x1="48" y1="140" x2="64" y2="20"/>
+        <line class="n-path n-serif-bl" x1="-8" y1="140" x2="16" y2="140"/>
+        <line class="n-path n-serif-br" x1="36" y1="140" x2="60" y2="140"/>
+      </svg>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <!-- REAL CONTENT -->
+  <div class="real-content">
+
+    <!-- DESKTOP NAVBAR -->
+    <header class="navbar-desktop">
+      <div class="navbar-inner">
+        <div class="navbar-brand">
+          <span class="brand-dot"></span>
+          <span class="brand-name">Mamma Mia</span>
+        </div>
+        <nav class="navbar-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="order.html" class="nav-link active">Order</a>
+          <a href="menu.html" class="nav-link">Menu</a>
+          <a href="reward.html" class="nav-link">Reward</a>
+          <a href="about.html" class="nav-link">About</a>
+        </nav>
       </div>
-      <nav class="navbar-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="order.html" class="nav-link active">Order</a>
-        <a href="menu.html" class="nav-link">Menu</a>
-        <a href="reward.html" class="nav-link">Reward</a>
-        <a href="about.html" class="nav-link">About</a>
-      </nav>
+    </header>
+
+    <!-- MOBILE NAVBAR -->
+    <nav class="navbar-mobile">
+      <div class="mobile-nav-inner">
+        <a href="index.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="order.html" class="mobile-nav-item active">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span>Order</span>
+        </a>
+        <a href="menu.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 6v6l4 2"/></svg>
+          <span>Menu</span>
+        </a>
+        <a href="reward.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>Reward</span>
+        </a>
+        <a href="about.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span>About</span>
+        </a>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="order-hero">
+      <p class="order-eyebrow">Place your order</p>
+      <h1 class="order-title">Order</h1>
+      <p class="order-sub">Fill in your details below and we'll take care of the rest.</p>
+    </section>
+
+    <!-- ORDER FORM -->
+    <div class="order-wrap">
+      <form class="order-form" id="orderForm" novalidate>
+
+        <!-- ① SERVICE OPTION — Radio Cards -->
+        <div class="form-section">
+          <label class="form-section-label">Service Option <span class="req">*</span></label>
+          <div class="service-cards">
+            <label class="service-card" id="card-pickup">
+              <input type="radio" name="service" value="pickup" />
+              <div class="service-card-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <span class="service-card-title">Pickup</span>
+                <span class="service-card-sub">Ready in 15–20 min</span>
+              </div>
+            </label>
+            <label class="service-card" id="card-delivery">
+              <input type="radio" name="service" value="delivery" />
+              <div class="service-card-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 5v4h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                <span class="service-card-title">Delivery</span>
+                <span class="service-card-sub">Arrives in 30–45 min</span>
+              </div>
+            </label>
+          </div>
+          <p class="field-error" id="err-service"></p>
+        </div>
+
+        <!-- Delivery address — shown only when delivery selected -->
+        <div class="form-section delivery-only hidden" id="deliverySection">
+          <label class="form-label" for="address">Delivery Address <span class="req">*</span></label>
+          <textarea class="form-textarea" id="address" name="address" placeholder="Enter your full delivery address…" rows="3"></textarea>
+          <p class="field-error" id="err-address"></p>
+        </div>
+
+        <!-- ② CUSTOMER INFO — Text Inputs -->
+        <div class="form-section">
+          <label class="form-section-label">Your Details</label>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name <span class="req">*</span></label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="e.g. Budi Santoso" autocomplete="name" />
+              <p class="field-error" id="err-name"></p>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number <span class="req">*</span></label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="e.g. 08123456789" autocomplete="tel" />
+              <p class="field-error" id="err-phone"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ③ CHOSEN MENU — Custom Dropdown -->
+        <div class="form-section">
+          <label class="form-section-label">Your Order <span class="req">*</span></label>
+          <div id="orderLines"></div>
+          <button type="button" class="btn-add-item" id="addItem">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            Add Another Item
+          </button>
+          <p class="field-error" id="err-menu"></p>
+        </div>
+
+        <!-- ④ EXTRA TOPPINGS — Checkbox Group -->
+        <div class="form-section">
+          <label class="form-section-label">Extra Toppings <span class="form-optional">(optional)</span></label>
+          <div class="checkbox-grid">
+            <label class="check-item">
+              <input type="checkbox" name="toppings" value="sambal-extra" />
+              <span class="check-box"></span>
+              <span class="check-label">Extra Sambal</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="toppings" value="kerupuk" />
+              <span class="check-box"></span>
+              <span class="check-label">Kerupuk</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="toppings" value="telur-ceplok" />
+              <span class="check-box"></span>
+              <span class="check-label">Telur Ceplok</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="toppings" value="nasi-extra" />
+              <span class="check-box"></span>
+              <span class="check-label">Nasi Extra</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="toppings" value="acar" />
+              <span class="check-box"></span>
+              <span class="check-label">Acar</span>
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="toppings" value="emping" />
+              <span class="check-box"></span>
+              <span class="check-label">Emping</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- ⑤ EATING UTENSILS — Toggle Switch -->
+        <div class="form-section">
+          <label class="form-section-label">Eating Utensils <span class="form-optional">(optional)</span></label>
+          <div class="toggle-list">
+            <label class="toggle-item">
+              <div class="toggle-info">
+                <span class="toggle-title">Include cutlery</span>
+                <span class="toggle-sub">Spoon, fork, and napkin</span>
+              </div>
+              <div class="toggle-switch">
+                <input type="checkbox" name="utensils" value="cutlery" id="utensil-cutlery" />
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+              </div>
+            </label>
+            <label class="toggle-item">
+              <div class="toggle-info">
+                <span class="toggle-title">Include chopsticks</span>
+                <span class="toggle-sub">Bamboo chopsticks</span>
+              </div>
+              <div class="toggle-switch">
+                <input type="checkbox" name="utensils" value="chopsticks" id="utensil-chopsticks" />
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+              </div>
+            </label>
+            <label class="toggle-item">
+              <div class="toggle-info">
+                <span class="toggle-title">Include straw</span>
+                <span class="toggle-sub">Paper straw for drinks</span>
+              </div>
+              <div class="toggle-switch">
+                <input type="checkbox" name="utensils" value="straw" id="utensil-straw" />
+                <span class="toggle-track"><span class="toggle-thumb"></span></span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- ⑥ PAYMENT METHOD — Radio Pill Group -->
+        <div class="form-section">
+          <label class="form-section-label">Payment Method <span class="req">*</span></label>
+          <div class="payment-pills">
+            <label class="pay-pill">
+              <input type="radio" name="payment" value="cash" />
+              <span>Cash</span>
+            </label>
+            <label class="pay-pill">
+              <input type="radio" name="payment" value="transfer" />
+              <span>Bank Transfer</span>
+            </label>
+            <label class="pay-pill">
+              <input type="radio" name="payment" value="qris" />
+              <span>QRIS</span>
+            </label>
+            <label class="pay-pill">
+              <input type="radio" name="payment" value="gopay" />
+              <span>GoPay</span>
+            </label>
+            <label class="pay-pill">
+              <input type="radio" name="payment" value="ovo" />
+              <span>OVO</span>
+            </label>
+          </div>
+
+          <!-- Payment Detail Panel -->
+          <div class="payment-detail hidden" id="paymentDetail">
+
+            <!-- Cash -->
+            <div class="pay-info" id="pay-cash">
+              <div class="pay-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M12 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"/><path d="M6 12h.01M18 12h.01"/></svg>
+              </div>
+              <div class="pay-info-text">
+                <p class="pay-info-title">Pay with Cash</p>
+                <p class="pay-info-desc">Prepare the exact amount when your order arrives or when you pick up. Our staff will confirm the total before payment.</p>
+              </div>
+            </div>
+
+            <!-- Bank Transfer -->
+            <div class="pay-info" id="pay-transfer">
+              <div class="pay-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+              </div>
+              <div class="pay-info-text">
+                <p class="pay-info-title">Bank Transfer</p>
+                <div class="pay-info-accounts">
+                  <div class="pay-account">
+                    <span class="pay-account-bank">BCA</span>
+                    <span class="pay-account-num">1234 5678 90</span>
+                    <button type="button" class="pay-copy-btn" data-copy="1234567890">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                      Copy
+                    </button>
+                  </div>
+                  <div class="pay-account">
+                    <span class="pay-account-bank">Mandiri</span>
+                    <span class="pay-account-num">9876 5432 10</span>
+                    <button type="button" class="pay-copy-btn" data-copy="9876543210">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                      Copy
+                    </button>
+                  </div>
+                </div>
+                <p class="pay-info-note">a.n. <strong>Rizal Santoso</strong> · Send proof of transfer via WhatsApp after payment.</p>
+              </div>
+            </div>
+
+            <!-- QRIS -->
+            <div class="pay-info" id="pay-qris">
+              <div class="pay-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="3" height="3" rx="0.5"/><rect x="18" y="14" width="3" height="3" rx="0.5"/><rect x="14" y="18" width="3" height="3" rx="0.5"/><rect x="18" y="18" width="3" height="3" rx="0.5"/></svg>
+              </div>
+              <div class="pay-info-text">
+                <p class="pay-info-title">Scan QRIS</p>
+                <div class="pay-qris-box">
+                  <div class="pay-qris-placeholder">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="5" y="5" width="3" height="3"/><rect x="16" y="5" width="3" height="3"/><rect x="5" y="16" width="3" height="3"/></svg>
+                    <span>QRIS Code</span>
+                    <p>Place your QRIS image here</p>
+                  </div>
+                </div>
+                <p class="pay-info-note">Works with all bank apps and e-wallets that support QRIS.</p>
+              </div>
+            </div>
+
+            <!-- GoPay -->
+            <div class="pay-info" id="pay-gopay">
+              <div class="pay-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+              </div>
+              <div class="pay-info-text">
+                <p class="pay-info-title">GoPay</p>
+                <div class="pay-account">
+                  <span class="pay-account-bank">GoPay Number</span>
+                  <span class="pay-account-num">0812 3456 7890</span>
+                  <button type="button" class="pay-copy-btn" data-copy="081234567890">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    Copy
+                  </button>
+                </div>
+                <p class="pay-info-note">a.n. <strong>Nadia Santoso</strong> · Send payment screenshot via WhatsApp.</p>
+              </div>
+            </div>
+
+            <!-- OVO -->
+            <div class="pay-info" id="pay-ovo">
+              <div class="pay-info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <div class="pay-info-text">
+                <p class="pay-info-title">OVO</p>
+                <div class="pay-account">
+                  <span class="pay-account-bank">OVO Number</span>
+                  <span class="pay-account-num">0812 3456 7890</span>
+                  <button type="button" class="pay-copy-btn" data-copy="081234567890">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                    Copy
+                  </button>
+                </div>
+                <p class="pay-info-note">a.n. <strong>Nadia Santoso</strong> · Send payment screenshot via WhatsApp.</p>
+              </div>
+            </div>
+
+          </div><!-- end payment-detail -->
+          <p class="field-error" id="err-payment"></p>
+        </div>
+
+        <!-- ⑦ NOTES — Textarea -->
+        <div class="form-section">
+          <label class="form-label" for="notes">Special Notes <span class="form-optional">(optional)</span></label>
+          <textarea class="form-textarea" id="notes" name="notes" placeholder="Any special requests, allergies, or instructions…" rows="3" maxlength="300"></textarea>
+          <p class="char-count"><span id="noteCount">0</span>/300</p>
+        </div>
+
+        <!-- BILL SUMMARY -->
+        <div class="form-section bill-section">
+          <label class="form-section-label">Order Summary</label>
+          <div class="bill-box">
+            <div class="bill-items" id="billItems"></div>
+            <div class="bill-empty" id="billEmpty">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              <span>No items selected yet</span>
+            </div>
+            <div class="bill-totals">
+              <div class="bill-row">
+                <span class="bill-row-label">Subtotal</span>
+                <span class="bill-row-value" id="billSubtotal">—</span>
+              </div>
+              <div class="bill-row">
+                <span class="bill-row-label">Tax & Service (10%)</span>
+                <span class="bill-row-value" id="billTax">—</span>
+              </div>
+              <div class="bill-row bill-row--total">
+                <span class="bill-row-label">Total</span>
+                <span class="bill-row-value" id="billTotal">—</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUBMIT -->
+        <div class="form-submit">
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span class="btn-submit-text">Place Order</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+
+      </form>
     </div>
-  </header>
 
-  <!-- MOBILE NAVBAR -->
-  <nav class="navbar-mobile">
-    <div class="mobile-nav-inner">
-      <a href="index.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-          <polyline points="9 22 9 12 15 12 15 22"/>
-        </svg>
-        <span>Home</span>
-      </a>
-      <a href="order.html" class="mobile-nav-item active">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-          <line x1="3" y1="6" x2="21" y2="6"/>
-          <path d="M16 10a4 4 0 0 1-8 0"/>
-        </svg>
-        <span>Order</span>
-      </a>
-      <a href="menu.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
-          <path d="M12 6v6l4 2"/>
-        </svg>
-        <span>Menu</span>
-      </a>
-      <a href="reward.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-        </svg>
-        <span>Reward</span>
-      </a>
-      <a href="about.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"/>
-          <line x1="12" y1="8" x2="12" y2="12"/>
-          <line x1="12" y1="16" x2="12.01" y2="16"/>
-        </svg>
-        <span>About</span>
-      </a>
+    <!-- SUCCESS MODAL -->
+    <div class="modal-overlay hidden" id="successModal">
+      <div class="modal-box">
+        <div class="modal-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h2 class="modal-title">Order Placed!</h2>
+        <p class="modal-sub">Thank you. We've received your order and will reach out to confirm shortly.</p>
+        <button class="btn-modal-close" id="modalClose">Back to Menu</button>
+      </div>
     </div>
-  </nav>
 
-  <!-- PAGE CONTENT -->
-  <main class="page-content">
-    <!-- Order content here -->
-  </main>
+  </div><!-- end .real-content -->
 
-  <script src="script.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/order.js"></script>
 </body>
 </html>

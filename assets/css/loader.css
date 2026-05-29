@@ -1,0 +1,109 @@
+#page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s ease, visibility 0.7s ease;
+}
+
+#page-loader.hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-n {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.loader-n svg {
+  overflow: visible;
+  animation: n-glow 1.4s ease 1.8s infinite alternate;
+}
+
+@keyframes n-glow {
+  from { filter: drop-shadow(0 0 2px rgba(201, 169, 110, 0.25)); }
+  to   { filter: drop-shadow(0 0 12px rgba(201, 169, 110, 0.7)); }
+}
+
+.n-path {
+  fill: none;
+  stroke: #c9a96e;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Left stem */
+.n-stem-l {
+  stroke-width: 3.5;
+  stroke-dasharray: 170;
+  stroke-dashoffset: 170;
+  animation: draw 0.45s cubic-bezier(0.4,0,0.2,1) 0.1s forwards;
+}
+
+/* Top serifs */
+.n-serif-tl {
+  stroke-width: 1;
+  stroke-dasharray: 22;
+  stroke-dashoffset: 22;
+  animation: draw 0.2s ease 0.5s forwards;
+}
+.n-serif-tr {
+  stroke-width: 1;
+  stroke-dasharray: 22;
+  stroke-dashoffset: 22;
+  animation: draw 0.2s ease 0.6s forwards;
+}
+
+/* Diagonal */
+.n-diag {
+  stroke-width: 1.2;
+  stroke-dasharray: 185;
+  stroke-dashoffset: 185;
+  animation: draw 0.4s cubic-bezier(0.4,0,0.2,1) 0.65s forwards;
+}
+
+/* Right stem */
+.n-stem-r {
+  stroke-width: 3.5;
+  stroke-dasharray: 170;
+  stroke-dashoffset: 170;
+  animation: draw 0.45s cubic-bezier(0.4,0,0.2,1) 0.95s forwards;
+}
+
+/* Bottom serifs */
+.n-serif-bl {
+  stroke-width: 1;
+  stroke-dasharray: 22;
+  stroke-dashoffset: 22;
+  animation: draw 0.2s ease 1.35s forwards;
+}
+.n-serif-br {
+  stroke-width: 1;
+  stroke-dasharray: 22;
+  stroke-dashoffset: 22;
+  animation: draw 0.2s ease 1.45s forwards;
+}
+
+@keyframes draw {
+  to { stroke-dashoffset: 0; }
+}
+
+/* Ornamental line */
+.loader-line {
+  width: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #c9a96e, transparent);
+  animation: line-grow 0.4s ease 1.6s forwards;
+}
+
+@keyframes line-grow {
+  to { width: 56px; }
+}

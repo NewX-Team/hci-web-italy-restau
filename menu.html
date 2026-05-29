@@ -1,81 +1,442 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu — Marca</title>
+  <title>Menu — Mamma Mia Ristorante</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="navbar.css" />
-  <link rel="stylesheet" href="menu.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/navbar.css" />
+  <link rel="stylesheet" href="/assets/css/loader.css" />
+  <link rel="stylesheet" href="/assets/css/menu.css" />
 </head>
 <body>
 
-  <!-- DESKTOP NAVBAR -->
-  <header class="navbar-desktop">
-    <div class="navbar-inner">
-      <div class="navbar-brand">
-        <span class="brand-dot"></span>
-        <span class="brand-name">Marca</span>
+  <div id="page-loader">
+    <div class="loader-n">
+      <svg width="52" height="96" viewBox="0 0 68 160" xmlns="http://www.w3.org/2000/svg">
+        <line class="n-path n-stem-l"   x1="4"  y1="140" x2="22" y2="20"/>
+        <line class="n-path n-serif-tl" x1="10" y1="20"  x2="32" y2="20"/>
+        <line class="n-path n-serif-tr" x1="36" y1="20"  x2="58" y2="20"/>
+        <line class="n-path n-diag"     x1="22" y1="20"  x2="48" y2="140"/>
+        <line class="n-path n-stem-r"   x1="48" y1="140" x2="64" y2="20"/>
+        <line class="n-path n-serif-bl" x1="-8" y1="140" x2="16" y2="140"/>
+        <line class="n-path n-serif-br" x1="36" y1="140" x2="60" y2="140"/>
+      </svg>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <div class="real-content" style="opacity:0;visibility:hidden;">
+
+    <header class="navbar-desktop">
+      <div class="navbar-inner">
+        <div class="navbar-brand">
+          <span class="brand-dot"></span>
+          <span class="brand-name">Mamma Mia</span>
+        </div>
+        <nav class="navbar-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="order.html" class="nav-link">Order</a>
+          <a href="menu.html" class="nav-link active">Menu</a>
+          <a href="reward.html" class="nav-link">Reward</a>
+          <a href="about.html" class="nav-link">About</a>
+        </nav>
       </div>
-      <nav class="navbar-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="order.html" class="nav-link">Order</a>
-        <a href="menu.html" class="nav-link active">Menu</a>
-        <a href="reward.html" class="nav-link">Reward</a>
-        <a href="about.html" class="nav-link">About</a>
-      </nav>
+    </header>
+
+    <nav class="navbar-mobile">
+      <div class="mobile-nav-inner">
+        <a href="index.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="order.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span>Order</span>
+        </a>
+        <a href="menu.html" class="mobile-nav-item active">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 6v6l4 2"/></svg>
+          <span>Menu</span>
+        </a>
+        <a href="reward.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>Reward</span>
+        </a>
+        <a href="about.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span>About</span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="menu-hero">
+      <p class="menu-eyebrow">Curated Excellence</p>
+      <h1 class="menu-title">Our Menu</h1>
+      <p class="menu-sub">Every dish is a celebration of Italy's finest ingredients, crafted with passion and precision.</p>
+    </section>
+
+    <div class="menu-tabs-wrap">
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-cat="primi">First courses</button>
+        <button class="menu-tab" data-cat="secondi">Second Courses</button>
+        <button class="menu-tab" data-cat="dolci">Sweets</button>
+        <button class="menu-tab" data-cat="bevande">Drinks</button>
+      </div>
     </div>
-  </header>
 
-  <!-- MOBILE NAVBAR -->
-  <nav class="navbar-mobile">
-    <div class="mobile-nav-inner">
-      <a href="index.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-          <polyline points="9 22 9 12 15 12 15 22"/>
-        </svg>
-        <span>Home</span>
-      </a>
-      <a href="order.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-          <line x1="3" y1="6" x2="21" y2="6"/>
-          <path d="M16 10a4 4 0 0 1-8 0"/>
-        </svg>
-        <span>Order</span>
-      </a>
-      <a href="menu.html" class="mobile-nav-item active">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
-          <path d="M12 6v6l4 2"/>
-        </svg>
-        <span>Menu</span>
-      </a>
-      <a href="reward.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-        </svg>
-        <span>Reward</span>
-      </a>
-      <a href="about.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"/>
-          <line x1="12" y1="8" x2="12" y2="12"/>
-          <line x1="12" y1="16" x2="12.01" y2="16"/>
-        </svg>
-        <span>About</span>
-      </a>
-    </div>
-  </nav>
+    <main class="menu-body">
 
-  <!-- PAGE CONTENT -->
-  <main class="page-content">
-    <!-- Menu content here -->
-  </main>
+      <div class="menu-category active" id="cat-primi">
+        <div class="menu-list">
 
-  <script src="script.js"></script>
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/home/123.jpg" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">Signature</span>
+                  <h3 class="menu-item-name">Black Truffle Risotto</h3>
+                </div>
+                <span class="menu-item-price">Rp 285,000</span>
+              </div>
+              <p class="menu-item-desc">Premium Arborio rice slow-cooked with 24-month aged Parmigiano Reggiano cream, finished with freshly shaved black truffle from Alba and a drizzle of white truffle oil.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/home/lobsternew.jpg" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">Bestseller</span>
+                  <h3 class="menu-item-name">Lobster Linguine</h3>
+                </div>
+                <span class="menu-item-price">Rp 325,000</span>
+              </div>
+              <p class="menu-item-desc">Handmade linguine tossed with Atlantic lobster tail, roasted San Marzano cherry tomatoes, garlic confit, and a delicate brandy bisque sauce finished with fresh basil.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/First-Course/Pappardelle-al-Cinghiale.webp" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">New</span>
+                  <h3 class="menu-item-name">Pappardelle al Cinghiale</h3>
+                </div>
+                <span class="menu-item-price">Rp 265,000</span>
+              </div>
+              <p class="menu-item-desc">Wide ribbon pasta with slow-braised wild boar ragù, simmered for eight hours in Chianti wine with juniper berries, rosemary, and San Marzano tomatoes.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/First-Course/Gnocchi-al-Gorgonzola.webp" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">Chef's Pick</span>
+                  <h3 class="menu-item-name">Gnocchi al Gorgonzola</h3>
+                </div>
+                <span class="menu-item-price">Rp 195,000</span>
+              </div>
+              <p class="menu-item-desc">Hand-rolled potato gnocchi in a velvety Gorgonzola Dolce cream sauce, topped with toasted walnuts, crispy sage leaves, and a drizzle of aged balsamic from Modena.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/First-Course/Spaghetti-alle-Vongole.avif" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <h3 class="menu-item-name">Spaghetti alle Vongole</h3>
+                </div>
+                <span class="menu-item-price">Rp 245,000</span>
+              </div>
+              <p class="menu-item-desc">Bronze-die spaghetti with fresh Mediterranean clams, white wine, garlic, peperoncino, and flat-leaf parsley. A timeless classic executed with precision.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="menu-category" id="cat-secondi">
+        <div class="menu-list">
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/home/beeftruf-mid.jpg" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">Bestseller</span>
+                  <h3 class="menu-item-name">Beef Carpaccio</h3>
+                </div>
+                <span class="menu-item-price">Rp 195,000</span>
+              </div>
+              <p class="menu-item-desc">Thinly sliced Wagyu beef tenderloin, wild arugula, shaved Parmigiano Reggiano, capers, and a drizzle of rare cold-pressed white olive oil from Tuscany.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/Second-Course/Osso-Buco-alla-Milanese.webp" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">Signature</span>
+                  <h3 class="menu-item-name">Osso Buco alla Milanese</h3>
+                </div>
+                <span class="menu-item-price">Rp 385,000</span>
+              </div>
+              <p class="menu-item-desc">Slow-braised veal shank in white wine and vegetable broth, served with saffron risotto and gremolata. Fall-off-the-bone tender with deep, complex flavors.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/Second-Course/Branzino-al-Forno.webp" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">New</span>
+                  <h3 class="menu-item-name">Branzino al Forno</h3>
+                </div>
+                <span class="menu-item-price">Rp 345,000</span>
+              </div>
+              <p class="menu-item-desc">Whole roasted Mediterranean sea bass stuffed with lemon, thyme, and fennel. Served with roasted artichokes, Taggiasca olives, and cherry tomato confit.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/Second-Course/Bistecca-alla-Fiorentina.jpg" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">Chef's Pick</span>
+                  <h3 class="menu-item-name">Bistecca alla Fiorentina</h3>
+                </div>
+                <span class="menu-item-price">Rp 495,000</span>
+              </div>
+              <p class="menu-item-desc">Charcoal-grilled T-bone steak from Chianina cattle, served rare with roasted garlic, rosemary potatoes, and a drizzle of extra virgin olive oil. A Tuscan masterpiece.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="menu-category" id="cat-dolci">
+        <div class="menu-list">
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/home/tiramisu-truffles.jpg" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">Bestseller</span>
+                  <h3 class="menu-item-name">Truffle Tiramisu</h3>
+                </div>
+                <span class="menu-item-price">Rp 145,000</span>
+              </div>
+              <p class="menu-item-desc">Silky mascarpone cream layered with single-origin espresso-soaked savoiardi, Valrhona cocoa powder, and a delicate touch of black truffle oil. Decadently refined.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/Sweets/Panna-Cotta-al-Pistacchio.avif" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">Signature</span>
+                  <h3 class="menu-item-name">Panna Cotta al Pistacchio</h3>
+                </div>
+                <span class="menu-item-price">Rp 125,000</span>
+              </div>
+              <p class="menu-item-desc">Bronte pistachio panna cotta with Madagascar vanilla bean, served with a vibrant raspberry coulis and crushed pistachio brittle. Silky, nutty, and perfectly balanced.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/Sweets/Tortino-al-Cioccolato.avif" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">New</span>
+                  <h3 class="menu-item-name">Tortino al Cioccolato</h3>
+                </div>
+                <span class="menu-item-price">Rp 155,000</span>
+              </div>
+              <p class="menu-item-desc">Warm dark chocolate lava cake with a molten heart, made from 70% single-origin Venezuelan chocolate. Served with vanilla bean gelato and candied orange zest.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/Sweets/Cannoli-Siciliani.webp" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">Chef's Pick</span>
+                  <h3 class="menu-item-name">Cannoli Siciliani</h3>
+                </div>
+                <span class="menu-item-price">Rp 135,000</span>
+              </div>
+              <p class="menu-item-desc">Crispy fried pastry shells filled with sweet ricotta cream, studded with dark chocolate chips and candied Sicilian citrus. Finished with a dusting of powdered sugar.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="menu-category" id="cat-bevande">
+        <div class="menu-list">
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/Drinks/Espresso-Doppio.webp" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">Bestseller</span>
+                  <h3 class="menu-item-name">Espresso Doppio</h3>
+                </div>
+                <span class="menu-item-price">Rp 55,000</span>
+              </div>
+              <p class="menu-item-desc">Double shot of our house-roasted single-origin Arabica blend from Ethiopia. Rich crema, notes of dark chocolate, caramel, and a hint of dried cherry.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/Drinks/Negroni-Sbagliato.jpeg" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">Signature</span>
+                  <h3 class="menu-item-name">Negroni Sbagliato</h3>
+                </div>
+                <span class="menu-item-price">Rp 165,000</span>
+              </div>
+              <p class="menu-item-desc">A sparkling twist on the classic Negroni. Campari, sweet vermouth, and Prosecco DOCG, served over a single large ice cube with an orange peel garnish.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/Drinks/Limoncello-Spritz.webp" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <span class="menu-item-tag">New</span>
+                  <h3 class="menu-item-name">Limoncello Spritz</h3>
+                </div>
+                <span class="menu-item-price">Rp 145,000</span>
+              </div>
+              <p class="menu-item-desc">House-made Sorrento limoncello, Prosecco, and a splash of soda. Bright, refreshing, and perfectly balanced. Garnished with fresh mint and a lemon wheel.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-img">
+              <img src="/assets/img/menu/Drinks/Acqua-di-Toscana.webp" alt="" class="menu-item-photo" />
+            </div>
+            <div class="menu-item-info">
+              <div class="menu-item-top">
+                <div>
+                  <h3 class="menu-item-name">Acqua di Toscana</h3>
+                </div>
+                <span class="menu-item-price">Rp 45,000</span>
+              </div>
+              <p class="menu-item-desc">Chilled still or sparkling mineral water sourced from the Tuscan hills. Served in a crystal glass with a sprig of rosemary and a slice of organic lemon.</p>
+              <div class="menu-item-footer">
+                <a href="order.html" class="btn-item-order">Order</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+
+  </div>
+
+  <script src="/assets/js/script.js"></script>
 </body>
 </html>

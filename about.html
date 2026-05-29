@@ -3,78 +3,208 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — Marca</title>
+  <title>About — Mamma Mia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="navbar.css" />
-  <link rel="stylesheet" href="about.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/navbar.css" />
+
+  <link rel="stylesheet" href="/assets/css/about.css" />
 </head>
 <body>
 
-  <!-- DESKTOP NAVBAR -->
-  <header class="navbar-desktop">
-    <div class="navbar-inner">
-      <div class="navbar-brand">
-        <span class="brand-dot"></span>
-        <span class="brand-name">Marca</span>
+  <!-- PAGE LOADER -->
+  <div id="page-loader">
+    <div class="loader-n">
+      <svg width="52" height="96" viewBox="0 0 68 160" xmlns="http://www.w3.org/2000/svg">
+        <line class="n-path n-stem-l"   x1="4"  y1="140" x2="22" y2="20"/>
+        <line class="n-path n-serif-tl" x1="10" y1="20"  x2="32" y2="20"/>
+        <line class="n-path n-serif-tr" x1="36" y1="20"  x2="58" y2="20"/>
+        <line class="n-path n-diag"     x1="22" y1="20"  x2="48" y2="140"/>
+        <line class="n-path n-stem-r"   x1="48" y1="140" x2="64" y2="20"/>
+        <line class="n-path n-serif-bl" x1="-8" y1="140" x2="16" y2="140"/>
+        <line class="n-path n-serif-br" x1="36" y1="140" x2="60" y2="140"/>
+      </svg>
+      <div class="loader-line"></div>
+    </div>
+  </div>
+
+  <!-- REAL CONTENT -->
+  <div class="real-content">
+
+    <!-- DESKTOP NAVBAR -->
+    <header class="navbar-desktop">
+      <div class="navbar-inner">
+        <div class="navbar-brand">
+          <span class="brand-dot"></span>
+          <span class="brand-name">Mamma Mia</span>
+        </div>
+        <nav class="navbar-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="order.html" class="nav-link">Order</a>
+          <a href="menu.html" class="nav-link">Menu</a>
+          <a href="reward.html" class="nav-link">Reward</a>
+          <a href="about.html" class="nav-link active">About</a>
+        </nav>
       </div>
-      <nav class="navbar-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="order.html" class="nav-link">Order</a>
-        <a href="menu.html" class="nav-link">Menu</a>
-        <a href="reward.html" class="nav-link">Reward</a>
-        <a href="about.html" class="nav-link active">About</a>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- MOBILE NAVBAR -->
-  <nav class="navbar-mobile">
-    <div class="mobile-nav-inner">
-      <a href="index.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-          <polyline points="9 22 9 12 15 12 15 22"/>
-        </svg>
-        <span>Home</span>
-      </a>
-      <a href="order.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
-          <line x1="3" y1="6" x2="21" y2="6"/>
-          <path d="M16 10a4 4 0 0 1-8 0"/>
-        </svg>
-        <span>Order</span>
-      </a>
-      <a href="menu.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
-          <path d="M12 6v6l4 2"/>
-        </svg>
-        <span>Menu</span>
-      </a>
-      <a href="reward.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-        </svg>
-        <span>Reward</span>
-      </a>
-      <a href="about.html" class="mobile-nav-item active">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"/>
-          <line x1="12" y1="8" x2="12" y2="12"/>
-          <line x1="12" y1="16" x2="12.01" y2="16"/>
-        </svg>
-        <span>About</span>
-      </a>
-    </div>
-  </nav>
+    <!-- MOBILE NAVBAR -->
+    <nav class="navbar-mobile">
+      <div class="mobile-nav-inner">
+        <a href="index.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="order.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span>Order</span>
+        </a>
+        <a href="menu.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 6v6l4 2"/></svg>
+          <span>Menu</span>
+        </a>
+        <a href="reward.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>Reward</span>
+        </a>
+        <a href="about.html" class="mobile-nav-item active">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span>About</span>
+        </a>
+      </div>
+    </nav>
 
-  <!-- PAGE CONTENT -->
-  <main class="page-content">
-    <!-- About content here -->
-  </main>
+    <!--  HERO -->
+    <section class="about-hero">
+      <div class="about-hero-text">
+        <p class="about-eyebrow">Est. 2018 · Semarang</p>
+        <h1 class="about-hero-title">A kitchen born<br><em>from passion,</em><br>not ambition.</h1>
+      </div>
+      <div class="about-hero-img-wrap">
+        <div class="about-hero-img">
+          <img src="/assets/img/about/ab2.jpg" alt="Mamma Mia restaurant interior" class="about-photo" />
+          <div class="about-hero-caption">Mamma Mia, Semarang · Est. 2018</div>
+        </div>
+        <div class="about-hero-pull">
+          "We never set out to build a restaurant. We set out to cook food we'd be proud to serve our own family."
+        </div>
+      </div>
+    </section>
+
+    <!-- ORIGIN STORY -->
+    <section class="about-section about-origin">
+      <div class="about-section-inner">
+        <div class="about-section-text">
+          <p class="about-label">Origin Story</p>
+          <h2 class="about-section-title">Four Tables.<br>One Family Recipe.</h2>
+          <p class="about-body">Mamma Mia began not with a business plan, but with a question: <em>what would it feel like to open your home to strangers and cook for them the way you cook for the people you love?</em></p>
+          <p class="about-body">In 2018, husband-and-wife duo <strong>Rizal</strong> and <strong>Nadia Santoso</strong> converted a small rented space in the heart of Semarang into a four-table warung. No investors, no press, no Instagram strategy — just Nadia's grandmother's sambal recipe and Rizal's instinct for hospitality.</p>
+          <p class="about-body">Word spread slowly at first, then all at once. By the end of their first year, the waitlist for weekend dinners stretched around the block. Mamma Mia had become something people talked about not because of what was on the plate, but because of how eating there made them feel.</p>
+        </div>
+        <div class="about-section-img">
+          <img src="/assets/img/about/ab3.jpg" alt="The original Mamma Mia warung in 2018" class="about-photo" />
+          <span class="about-img-caption">The original space, 2018</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="about-section about-philosophy">
+      <div class="about-philosophy-inner">
+        <div class="about-philosophy-header">
+          <p class="about-label">Our Philosophy</p>
+          <h2 class="about-section-title">Italian Soul,<br>Indonesian Heart.</h2>
+        </div>
+        <div class="about-philosophy-body">
+          <p class="about-body">Mamma Mia draws its culinary identity from Italian tradition — the belief that great food starts with the finest ingredients, the least interference, and the most patience. But the flavors that fill our kitchen are deeply rooted in the Indonesian pantry: keluak, rempah, pandan, kelapa, and a dozen other ingredients that hold the memory of this country in every bite.</p>
+          <p class="about-body">We call this approach <em>cucina onesta</em> — honest cooking. No shortcuts, no stock powder, no compromise. Every broth is made from scratch. Every sambal is ground fresh. Every pastry is made in-house before the sun rises.</p>
+        </div>
+        <div class="about-pillars">
+          <div class="about-pillar">
+            <span class="pillar-num">I</span>
+            <h3 class="pillar-title">Ingredients First</h3>
+            <p class="pillar-body">We source directly from farmers and suppliers we trust personally. If the ingredient isn't right, the dish doesn't go on the menu.</p>
+          </div>
+          <div class="about-pillar">
+            <span class="pillar-num">II</span>
+            <h3 class="pillar-title">Respect the Process</h3>
+            <p class="pillar-body">Slow cooking, proper technique, and patience. We believe every great dish is earned, not rushed.</p>
+          </div>
+          <div class="about-pillar">
+            <span class="pillar-num">III</span>
+            <h3 class="pillar-title">Feed with Intention</h3>
+            <p class="pillar-body">Every plate that leaves our kitchen carries care. We want every guest to feel that — not just taste it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  PHILOSOPHY IMAGE BREAK -->
+    <div class="about-img-break">
+      <img src="/assets/img/about/fa1.jpg" alt="Mamma Mia kitchen in action" class="about-photo" />
+      <div class="about-img-break-overlay">
+        <blockquote class="about-blockquote">"Cucina onesta — honest cooking. No shortcuts, no compromise."</blockquote>
+      </div>
+    </div>
+
+    <!--  FOUNDERS -->
+    <section class="about-section about-founders">
+      <div class="about-section-inner">
+        <div class="about-founders-header">
+          <p class="about-label">The People Behind Mamma Mia</p>
+          <h2 class="about-section-title">Our Founders</h2>
+        </div>
+        <div class="about-founders-grid">
+
+          <div class="founder-card">
+            <div class="founder-img-wrap">
+              <img src="/assets/img/about/manew.jpg" alt="Rizal Santoso" class="about-photo founder-photo" />
+            </div>
+            <div class="founder-info">
+              <div class="founder-header">
+                <h3 class="founder-name">Rizal Santoso</h3>
+                <span class="founder-role">Co-Founder & Director of Operations</span>
+              </div>
+              <p class="founder-bio">Rizal grew up watching his mother run a small catering business out of their family home in Semarang. That upbringing gave him an intuitive grasp of hospitality — the quiet art of making people feel welcome before they've even taken their seats.</p>
+              <p class="founder-bio">After a decade in hotel management across Jakarta and Bali, he returned to Semarang with a clear vision: a restaurant that felt personal. Not a concept, not a brand — a place. Mamma Mia is that place.</p>
+              <p class="founder-quote">"A restaurant is only as good as the feeling people carry out the door."</p>
+            </div>
+          </div>
+
+          <div class="founder-card">
+            <div class="founder-img-wrap">
+              <img src="/assets/img/about/womannew.jpg" alt="Nadia Santoso" class="about-photo founder-photo" />
+            </div>
+            <div class="founder-info">
+              <div class="founder-header">
+                <h3 class="founder-name">Nadia Santoso</h3>
+                <span class="founder-role">Co-Founder & Head of Culinary</span>
+              </div>
+              <p class="founder-bio">Nadia trained at a culinary institute in Bologna, Italy, where she spent three years immersed in the philosophy of Italian cooking — its precision, its seasonality, its refusal to overcomplicate. She came home with techniques, but kept her grandmother's recipes.</p>
+              <p class="founder-bio">Her cooking is the soul of Mamma Mia. She writes every menu, oversees every recipe, and still personally trains each kitchen hire. The consistency you taste at Mamma Mia is entirely hers.</p>
+              <p class="founder-quote">"Italian cooking taught me restraint. Indonesian ingredients taught me depth. Mamma Mia is where those two things finally made sense together."</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ⑥ CLOSING IMAGE -->
+    <div class="about-closing">
+      <div class="about-closing-img">
+        <img src="/assets/img/about/fa2.jpg" alt="Mamma Mia dining room" class="about-photo" />
+      </div>
+      <div class="about-closing-text">
+        <p class="about-label">Come as you are</p>
+        <h2 class="about-closing-title">The table is always set.</h2>
+        <p class="about-body">Whether it's your first visit or your fiftieth, Mamma Mia is a place where you're always welcome. Come hungry. Leave feeling like you've been fed something more than food.</p>
+        <a href="order.html" class="btn-about-order">Order Now</a>
+      </div>
+    </div>
+
+  </div><!-- end .real-content -->
 
   <script src="script.js"></script>
 </body>

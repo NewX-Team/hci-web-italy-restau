@@ -1,6 +1,4 @@
-/* ==============================
-   ROOT & RESET
-   ============================== */
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -31,9 +29,7 @@ html, body {
 }
 
 
-/* ==============================
-   DESKTOP NAVBAR
-   ============================== */
+
 .navbar-desktop {
   position: fixed;
   top: 0;
@@ -142,9 +138,7 @@ html, body {
 }
 
 
-/* ==============================
-   MOBILE NAVBAR
-   ============================== */
+/* Navbar-Mobile */
 .navbar-mobile {
   display: none;
   position: fixed;
@@ -211,9 +205,7 @@ html, body {
 }
 
 
-/* ==============================
-   PAGE CONTENT BASE
-   ============================== */
+
 .page-content {
   padding-top: calc(var(--nav-height) + 60px);
   padding-bottom: 120px;
@@ -230,9 +222,6 @@ html, body {
 }
 
 
-/* ==============================
-   RESPONSIVE
-   ============================== */
 @media (max-width: 768px) {
   .navbar-desktop {
     display: none;
@@ -244,9 +233,7 @@ html, body {
 }
 
 
-/* ==============================
-   FADE IN ANIMATION (shared)
-   ============================== */
+
 .fade-in {
   opacity: 0;
   transform: translateY(24px);

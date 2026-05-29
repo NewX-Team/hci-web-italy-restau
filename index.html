@@ -1,201 +1,250 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home — Marca</title>
+  <title>Home — Mamma Mia Ristorante</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="navbar.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/navbar.css" />
+  <link rel="stylesheet" href="/assets/css/loader.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
 
-  <!-- DESKTOP NAVBAR -->
-  <header class="navbar-desktop">
-    <div class="navbar-inner">
-      <div class="navbar-brand">
-        <span class="brand-dot"></span>
-        <span class="brand-name">Marca</span>
-      </div>
-      <nav class="navbar-links">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="order.html" class="nav-link">Order</a>
-        <a href="menu.html" class="nav-link">Menu</a>
-        <a href="reward.html" class="nav-link">Reward</a>
-        <a href="about.html" class="nav-link">About</a>
-      </nav>
+  <div id="page-loader">
+    <div class="loader-n">
+      <svg width="52" height="96" viewBox="0 0 68 160" xmlns="http://www.w3.org/2000/svg">
+        <line class="n-path n-stem-l" x1="4" y1="140" x2="22" y2="20"/>
+        <line class="n-path n-serif-tl" x1="10" y1="20" x2="32" y2="20"/>
+        <line class="n-path n-serif-tr" x1="36" y1="20" x2="58" y2="20"/>
+        <line class="n-path n-diag" x1="22" y1="20" x2="48" y2="140"/>
+        <line class="n-path n-stem-r" x1="48" y1="140" x2="64" y2="20"/>
+        <line class="n-path n-serif-bl" x1="-8" y1="140" x2="16" y2="140"/>
+        <line class="n-path n-serif-br" x1="36" y1="140" x2="60" y2="140"/>
+      </svg>
+      <div class="loader-line"></div>
     </div>
-  </header>
+  </div>
 
-  <!-- MOBILE NAVBAR -->
-  <nav class="navbar-mobile">
-    <div class="mobile-nav-inner">
-      <a href="index.html" class="mobile-nav-item active">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        <span>Home</span>
-      </a>
-      <a href="order.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-        <span>Order</span>
-      </a>
-      <a href="menu.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 6v6l4 2"/></svg>
-        <span>Menu</span>
-      </a>
-      <a href="reward.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        <span>Reward</span>
-      </a>
-      <a href="about.html" class="mobile-nav-item">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        <span>About</span>
-      </a>
+  <div class="skeleton-container" id="skeleton-container">
+    <div class="loader-bar-track">
+      <div class="loader-bar-fill"></div>
     </div>
-  </nav>
-
-  <!-- ========================
-       HERO SECTION
-  ========================= -->
-  <section class="hero">
-    <div class="hero-bg">
-      <div class="hero-grain"></div>
-      <div class="hero-glow"></div>
+    <div class="sk sk-h1-line1"></div>
+    <div class="sk sk-h1-line2"></div>
+    <div class="sk sk-sub"></div>
+    <div class="sk sk-sub2"></div>
+    <div class="sk-btns">
+      <div class="sk sk-btn"></div>
+      <div class="sk sk-btn"></div>
     </div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Est. 2018 · Semarang</p>
-      <h1 class="hero-title">
-        Where Every Meal<br />
-        <em>Tells a Story</em>
-      </h1>
-      <p class="hero-sub">Crafted flavors, honest ingredients, and a table that always feels like home.</p>
-      <div class="hero-actions">
-        <a href="order.html" class="btn-primary">Order Now</a>
-        <a href="menu.html" class="btn-ghost">Explore Menu</a>
-      </div>
-    </div>
-    <div class="hero-scroll-hint">
-      <span></span>
-    </div>
-  </section>
-
-  <!-- ========================
-       POPULAR ITEMS GALLERY
-  ========================= -->
-  <section class="gallery-section">
-    <div class="section-header">
-      <p class="section-label">Most Loved</p>
-      <h2 class="section-title">Our Signature Picks</h2>
-    </div>
-
-    <div class="gallery-grid">
-
-      <div class="gallery-card card-large">
-        <div class="card-img" style="background: linear-gradient(135deg, #2a1f14 0%, #1a1208 100%);">
-          <div class="card-img-placeholder">
-            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="30" cy="22" r="10" stroke="#c9a96e" stroke-width="1.5"/>
-              <path d="M14 46c0-8.84 7.16-16 16-16s16 7.16 16 16" stroke="#c9a96e" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
+    <div class="sk-gallery-section">
+      <div class="sk sk-label"></div>
+      <div class="sk sk-sec-title"></div>
+      <div class="sk-gallery-grid">
+        <div class="sk-card-wrap large">
+          <div class="sk-card-img tall"></div>
+          <div class="sk-card-body">
+            <div class="sk sk-tag"></div>
+            <div class="sk sk-name"></div>
+            <div class="sk sk-desc1"></div>
+            <div class="sk sk-desc2"></div>
+            <div class="sk sk-price"></div>
           </div>
         </div>
-        <div class="card-info">
-          <span class="card-tag">Staff Favourite</span>
-          <h3 class="card-name">Nasi Bakar Rempah</h3>
-          <p class="card-desc">Fragrant rice grilled in banana leaf, served with sambal matah and crispy tempeh.</p>
-          <span class="card-price">Rp 45.000</span>
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="card-img" style="background: linear-gradient(135deg, #1a1a14 0%, #0f0f0a 100%);">
-          <div class="card-img-placeholder">
-            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15 38 Q30 20 45 38" stroke="#c9a96e" stroke-width="1.5" fill="none"/>
-              <ellipse cx="30" cy="40" rx="18" ry="6" stroke="#c9a96e" stroke-width="1.5"/>
-            </svg>
+        <div class="sk-card-wrap">
+          <div class="sk-card-img"></div>
+          <div class="sk-card-body">
+            <div class="sk sk-tag"></div>
+            <div class="sk sk-name"></div>
+            <div class="sk sk-desc1"></div>
+            <div class="sk sk-price"></div>
           </div>
         </div>
-        <div class="card-info">
-          <span class="card-tag">Bestseller</span>
-          <h3 class="card-name">Marca Black Coffee</h3>
-          <p class="card-desc">Single-origin Flores, cold-dripped 18 hours.</p>
-          <span class="card-price">Rp 32.000</span>
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="card-img" style="background: linear-gradient(135deg, #1e1510 0%, #110c08 100%);">
-          <div class="card-img-placeholder">
-            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="16" y="20" width="28" height="22" rx="4" stroke="#c9a96e" stroke-width="1.5"/>
-              <path d="M22 20v-4a8 8 0 0 1 16 0v4" stroke="#c9a96e" stroke-width="1.5"/>
-            </svg>
+        <div class="sk-card-wrap">
+          <div class="sk-card-img"></div>
+          <div class="sk-card-body">
+            <div class="sk sk-tag"></div>
+            <div class="sk sk-name"></div>
+            <div class="sk sk-desc1"></div>
+            <div class="sk sk-price"></div>
           </div>
         </div>
-        <div class="card-info">
-          <span class="card-tag">New</span>
-          <h3 class="card-name">Lava Cokelat Kelapa</h3>
-          <p class="card-desc">Warm molten chocolate with toasted coconut cream.</p>
-          <span class="card-price">Rp 38.000</span>
-        </div>
-      </div>
-
-      <div class="gallery-card">
-        <div class="card-img" style="background: linear-gradient(135deg, #141a14 0%, #0a100a 100%);">
-          <div class="card-img-placeholder">
-            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 42V28l10-12 10 12v14H20z" stroke="#c9a96e" stroke-width="1.5"/>
-              <path d="M26 42v-8h8v8" stroke="#c9a96e" stroke-width="1.5"/>
-            </svg>
-          </div>
-        </div>
-        <div class="card-info">
-          <span class="card-tag">Bestseller</span>
-          <h3 class="card-name">Soto Betawi Marca</h3>
-          <p class="card-desc">Rich coconut broth, tender beef, house-made emping.</p>
-          <span class="card-price">Rp 52.000</span>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="gallery-cta">
-      <a href="menu.html" class="btn-ghost">View Full Menu →</a>
-    </div>
-  </section>
-
-  <!-- ========================
-       ORIGIN STORY
-  ========================= -->
-  <section class="story-section">
-    <div class="story-inner">
-      <div class="story-text">
-        <p class="section-label">Our Story</p>
-        <h2 class="section-title">Born From a Small Kitchen in Semarang</h2>
-        <p class="story-body">
-          Marca started in 2018 as a tiny warung with four tables, a handful of family recipes, and a stubborn belief that good food doesn't need to be complicated — just honest.
-        </p>
-        <p class="story-body">
-          What began as a weekend passion project grew, plate by plate, into the place you're visiting today. Every dish still carries that same original intention: feed people well, make them feel welcome.
-        </p>
-        <a href="about.html" class="btn-ghost">Read the Full Story →</a>
-      </div>
-      <div class="story-visual">
-        <div class="story-card-stack">
-          <div class="story-card story-card--back">
-            <span class="story-year">2018</span>
-          </div>
-          <div class="story-card story-card--front">
-            <blockquote>"Food is the shortest distance between two strangers."</blockquote>
-            <cite>— Founder, Marca</cite>
+        <div class="sk-card-wrap">
+          <div class="sk-card-img"></div>
+          <div class="sk-card-body">
+            <div class="sk sk-tag"></div>
+            <div class="sk sk-name"></div>
+            <div class="sk sk-desc1"></div>
+            <div class="sk sk-price"></div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+    <div class="sk-story-section">
+      <div class="sk-story-inner">
+        <div class="sk-story-text">
+          <div class="sk sk-label"></div>
+          <div class="sk sk-title1"></div>
+          <div class="sk sk-title2"></div>
+          <div class="sk sk-p"></div>
+          <div class="sk sk-p2"></div>
+          <div class="sk sk-p3"></div>
+          <div class="sk sk-p"></div>
+          <div class="sk sk-p2"></div>
+          <div class="sk sk-btn"></div>
+        </div>
+        <div class="sk-story-visual">
+          <div class="sk-story-card-back"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <script src="script.js"></script>
+  <div class="real-content" id="real-content" style="opacity:0; visibility:hidden;">
+
+    <header class="navbar-desktop">
+      <div class="navbar-inner">
+        <div class="navbar-brand">
+          <span class="brand-dot"></span>
+          <span class="brand-name">Mamma Mia</span>
+        </div>
+        <nav class="navbar-links">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="order.html" class="nav-link">Order</a>
+          <a href="menu.html" class="nav-link">Menu</a>
+          <a href="reward.html" class="nav-link">Reward</a>
+          <a href="about.html" class="nav-link">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="navbar-mobile">
+      <div class="mobile-nav-inner">
+        <a href="index.html" class="mobile-nav-item active">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>Home</span>
+        </a>
+        <a href="order.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span>Order</span>
+        </a>
+        <a href="menu.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/><path d="M12 6v6l4 2"/></svg>
+          <span>Menu</span>
+        </a>
+        <a href="reward.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>Reward</span>
+        </a>
+        <a href="about.html" class="mobile-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span>About</span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="hero-grain"></div>
+        <div class="hero-glow"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Est. 2018 · Florence</p>
+        <h1 class="hero-title">
+          The Art of<br />
+          <em>Italian Cuisine</em>
+        </h1>
+        <p class="hero-sub">Luxurious, authentic, and passionate. Every dish is a masterpiece crafted from Italy's finest ingredients.</p>
+        <div class="hero-actions">
+          <a href="order.html" class="btn-primary">Order Now</a>
+          <a href="menu.html" class="btn-ghost">Explore Tasting Menu</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint"><span></span></div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="section-header">
+        <p class="section-label">Most Loved</p>
+        <h2 class="section-title">Our Signature Creations</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-card card-large">
+          <div class="card-img">
+            <img src="/assets/img/home/123.jpg" alt="Black Truffle Risotto" class="card-photo" />
+          </div>
+          <div class="card-info">
+            <span class="card-tag">Signature</span>
+            <h3 class="card-name">Black Truffle Risotto</h3>
+            <p class="card-desc">Premium Arborio rice with 24-month aged Parmigiano Reggiano cream, finished with fresh black truffle shavings.</p>
+            <span class="card-price">Rp 285,000</span>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="card-img">
+            <img src="/assets/img/home/beeftruf-mid.jpg" alt="Beef Carpaccio" class="card-photo" />
+          </div>
+          <div class="card-info">
+            <span class="card-tag">Antipasti</span>
+            <h3 class="card-name">Beef Carpaccio</h3>
+            <p class="card-desc">Thinly sliced Wagyu beef, wild arugula, Parmesan cheese, and rare white olive oil.</p>
+            <span class="card-price">Rp 195,000</span>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="card-img">
+            <img src="/assets/img/home/tiramisu-truffles.jpg" alt="Truffle Tiramisu" class="card-photo" />
+          </div>
+          <div class="card-info">
+            <span class="card-tag">Dolce</span>
+            <h3 class="card-name">Truffle Tiramisu</h3>
+            <p class="card-desc">Silky mascarpone, single-origin espresso, Valrhona cocoa powder, and a touch of truffle oil.</p>
+            <span class="card-price">Rp 145,000</span>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="card-img">
+            <img src="/assets/img/home/lobsternew.jpg" alt="Lobster Linguine" class="card-photo" />
+          </div>
+          <div class="card-info">
+            <span class="card-tag">Pasta</span>
+            <h3 class="card-name">Lobster Linguine</h3>
+            <p class="card-desc">Handmade linguine, Atlantic lobster tail, roasted cherry tomatoes, and brandy bisque sauce.</p>
+            <span class="card-price">Rp 325,000</span>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-cta">
+        <a href="menu.html" class="btn-ghost">View Full Menu →</a>
+      </div>
+    </section>
+
+    <section class="story-section">
+      <div class="story-inner">
+        <div class="story-text">
+          <p class="section-label">Our Story</p>
+          <h2 class="section-title">Inspired by an Ancient Kitchen in Florence</h2>
+          <p class="story-body">Mamma Mia was born from a deep love for Italian culinary tradition. Starting as a small trattoria in the heart of Florence in 2018, we bring family recipes passed down through generations to your table.</p>
+          <p class="story-body">Every ingredient is hand-selected from local farmers in Tuscany and Piedmont. From cold-pressed extra virgin olive oil to perfectly aged Parmigiano Reggiano. We don't just serve food; we present a story of Italy on every plate.</p>
+          <a href="about.html" class="btn-ghost">Read the Full Story →</a>
+        </div>
+        <div class="story-visual">
+          <div class="story-card-stack">
+            <div class="story-card story-card--back"><span class="story-year">Florence, 2018</span></div>
+            <div class="story-card story-card--front">
+              <blockquote>"La cucina è l'arte di trasformare ingredienti semplici in emozioni eterne."</blockquote>
+              <cite>— Executive Chef, Mamma Mia</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="/assets/js/script.js"></script>
 </body>
 </html>
